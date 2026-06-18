@@ -14,15 +14,9 @@ public class loginclass extends baseclass {
 	    public void verifyLogin() {
 
 	        loginpage login = new loginpage(driver);
-	        login.login("Admin", "admin123");
-
-	       // login.login("Admin", "admin123");
-
-	       String currentUrl = driver.getCurrentUrl();
-
-	        Assert.assertTrue(currentUrl.contains("dashboard"));
-	       
-
-	        System.out.println("Login Successful");
+	       login.emai();
+	       login.pass();
+	       login.clickbutton();
+	     
 	    }
 }

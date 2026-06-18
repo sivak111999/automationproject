@@ -15,11 +15,20 @@ public class loginpage {
 	        this.driver = driver;
 	    }
 
-	    public void login(String user, String pass) {
+	    public void emai() {
 
-	        driver.findElement(username).sendKeys(user);
-	        driver.findElement(password).sendKeys(pass);
-	        driver.findElement(loginBtn).click();
+	        driver.findElement(username).sendKeys("Admin");
+	        
+	    }
+	    
+	    public void pass() {
+	    	
+	    	driver.findElement(password).sendKeys("admin123");
+	    }
+	    
+	    public void clickbutton() {
+	    	
+	    	driver.findElement(loginBtn).click();
 	    }
 
 }
