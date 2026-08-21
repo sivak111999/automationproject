@@ -37,11 +37,11 @@ public class registeerpage {
 	@FindBy(xpath="//*[@id='password']")
 	WebElement password;
 	
-	@FindBy(xpath="//*[@id='uniform-days']")
+	@FindBy(xpath="//*[@id='days']/option[17]")
 	WebElement dateofbirthday;
-	@FindBy(xpath="//*[@id='uniform-months']")
+	@FindBy(xpath="//*[@id='months']/option[7]")
 	WebElement dateofbirthdaymonth;
-	@FindBy(xpath="//*[@id='uniform-years']")
+	@FindBy(xpath="//*[@id='years']/option[26]")
 	WebElement dateofbirthdayyear;
 	
 	@FindBy(xpath="//*[@id='newsletter']")
@@ -98,9 +98,9 @@ public class registeerpage {
 	 }
 	 public void radiobuttonclick() {
 		 
-		 WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-		 wait.until( ExpectedConditions.elementToBeClickable(radiobutton));
-		 
+		// WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		// wait.until( ExpectedConditions.visibilityOfElementLocated(radiobutton));
+		 radiobutton.click();
 	 }
 	 
 	 public void name(String names) {
@@ -111,10 +111,10 @@ public class registeerpage {
 		 
 		 password.sendKeys(pass);
 	 }
-	 public void dateofbirth(int day, int month, int yea) {
-		 dateofbirthday.sendKeys("day");
-		 dateofbirthdaymonth.sendKeys("month");
-		 dateofbirthdayyear.sendKeys("yea");
+	 public void dateofbirth() {
+		 dateofbirthday.click();
+		 dateofbirthdaymonth.click();
+		 dateofbirthdayyear.click();
 		 
 		 
 		 

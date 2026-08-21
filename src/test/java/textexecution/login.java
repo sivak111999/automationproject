@@ -128,27 +128,7 @@ public class login extends baseclass {
 	   Assert.assertEquals(actualmessage, expectedmessage);
 	   
 		   }
-		   
-		   public   String randomstring() {
-			   
-			    String generatedstring = RandomStringUtils.randomAlphabetic(5);
-			   return generatedstring;
-			   
-		   }
-		   
-		   public String randomnumber() {
-			    String generatednumber= RandomStringUtils.randomNumeric(10);
-				return generatednumber
-						;
-			   
-		   }
-		   
-		   public String randomalpanumaric() {
-			   String generatedstring = RandomStringUtils.randomAlphabetic(3);
-			   String generatednumber = RandomStringUtils.randomNumeric(3);
-			   return (generatedstring+ "@"+generatednumber);
-		   }
-	
+		
 
 	   
 }

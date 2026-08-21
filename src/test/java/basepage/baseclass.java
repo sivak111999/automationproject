@@ -14,6 +14,7 @@ import java.util.Properties;
 
 
 import org.apache.logging.log4j.core.Logger;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -122,4 +123,25 @@ public class baseclass {
 		// TODO Auto-generated method stub
 		return null;
 	  }
+	   
+	   public   String randomstring() {
+		   
+		    String generatedstring = RandomStringUtils.randomAlphabetic(5);
+		   return generatedstring;
+		   
+	   }
+	   
+	   public String randomnumber() {
+		    String generatednumber= RandomStringUtils.randomNumeric(10);
+			return generatednumber
+					;
+		   
+	   }
+	   
+	   public String randomalpanumaric() {
+		   String generatedstring = RandomStringUtils.randomAlphabetic(3);
+		   String generatednumber = RandomStringUtils.randomNumeric(3);
+		   return (generatedstring+ "@"+generatednumber);
+	   }
+
 }

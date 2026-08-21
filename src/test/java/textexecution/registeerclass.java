@@ -7,17 +7,17 @@ import POMpage.registeerpage;
 import basepage.baseclass;
 
 public class registeerclass  extends baseclass{
-	WebDriver driver;
+	
 	@Test
 	public void regiestercreated() {
 		
 		registeerpage rp = new registeerpage(driver);
 		
-		rp.username("sivareddy", "siavreddy@gmail.com");
+		rp.username(randomstring(),randomalpanumaric() );
 		rp.radiobuttonclick();
-		rp.name("sivareddy");
+		rp.name(randomstring());
 		rp.pass("Siva$123");
-		rp.dateofbirth(16, 06, 1997);
+		rp.dateofbirth();
 		rp.clicknewsleete();
 		rp.firstlastcompany("siva", "reddy", "capgemini");
 		rp.addres("ammenpur", "brudhavancolony");
