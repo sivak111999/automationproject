@@ -8,6 +8,35 @@
     <groupId>automation</groupId>
     <artifactId>seleniumjava</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+     <build>
+  <pluginManagement>
+  <plugins>
+  <plugin>
+  
+  
+  <groupId>org.apache.maven.surefire</groupId>
+  <artifactId>surefire-shared-utils</artifactId>
+  <version>3.6.0-M1</version>
+  <configuration>
+  <SuiteXmlFiles>
+  <SuiteXmlFile>testng.xml</SuiteXmlFile>
+  </SuiteXmlFiles>
+  </configuration>
+ </plugin>
+ <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.15.0</version>
+           <configuration>
+  <SuiteXmlFiles>
+  <SuiteXmlFile>testng2.xml
+  </SuiteXmlFile>
+  </SuiteXmlFiles>
+  </configuration>
+ </plugin>
+  </plugins>
+  </pluginManagement>
+  </build>
 
     <dependencies>
 

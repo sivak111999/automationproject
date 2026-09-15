@@ -2,24 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-20T20:45:30 IST" name="suite" finished-at="2026-08-20T20:45:57 IST" duration-ms="27167">
+  <suite started-at="2026-09-15T14:34:08 IST" name="Default suite" finished-at="2026-09-15T14:34:17 IST" duration-ms="9178">
     <groups>
     </groups>
-    <test started-at="2026-08-20T20:45:30 IST" name="textexecution" finished-at="2026-08-20T20:45:57 IST" duration-ms="27167">
-      <class name="textexecution.registeerclass">
-        <test-method is-config="true" signature="setupmethod()[pri:0, instance:textexecution.registeerclass@4c402120]" started-at="2026-08-20T20:45:30 IST" name="setupmethod" finished-at="2026-08-20T20:45:39 IST" duration-ms="9555" status="PASS">
+    <test started-at="2026-09-15T14:34:08 IST" name="Default test" finished-at="2026-09-15T14:34:17 IST" duration-ms="9178">
+      <class name="seleniumconcepts.dynamictable">
+        <test-method signature="dynamictable()[pri:0, instance:seleniumconcepts.dynamictable@7c7a06ec]" started-at="2026-09-15T14:34:08 IST" name="dynamictable" finished-at="2026-09-15T14:34:17 IST" duration-ms="9096" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupmethod -->
-        <test-method signature="regiestercreated()[pri:0, instance:textexecution.registeerclass@4c402120]" started-at="2026-08-20T20:45:39 IST" name="regiestercreated" finished-at="2026-08-20T20:45:56 IST" duration-ms="16984" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- regiestercreated -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:textexecution.registeerclass@4c402120]" started-at="2026-08-20T20:45:56 IST" name="tearDown" finished-at="2026-08-20T20:45:57 IST" duration-ms="562" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- textexecution.registeerclass -->
-    </test> <!-- textexecution -->
-  </suite> <!-- suite -->
+        </test-method> <!-- dynamictable -->
+      </class> <!-- seleniumconcepts.dynamictable -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

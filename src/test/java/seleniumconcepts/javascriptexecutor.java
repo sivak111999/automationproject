@@ -1,5 +1,7 @@
 package seleniumconcepts;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -19,6 +21,11 @@ public class javascriptexecutor extends baseclass {
 
 	js.executeScript("arguments[0].scrollIntoView();", element);
 	element.click();
+	}
+
+	public void executeScript(String string, List<WebElement> rows) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

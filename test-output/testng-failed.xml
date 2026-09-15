@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="textexecution.registeerclass">
+      <class name="seleniumconcepts.dynamictable">
         <methods>
-          <include name="setupmethod"/>
-          <include name="tearDown"/>
-          <include name="regiestercreated"/>
+          <include name="dynamictable"/>
         </methods>
-      </class> <!-- textexecution.registeerclass -->
+      </class> <!-- seleniumconcepts.dynamictable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

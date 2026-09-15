@@ -73,26 +73,16 @@ public class baseclass {
 		
 		
 		
-	}
+	} 
 	
 	
 	  @AfterMethod
 	    public void tearDown() {
         if(driver!=null) {
 	        driver.quit();
-	    }
+	    }  
 	  }
-	/*  public String capturescreen(WebDriver driver ,String tname) {
-		  if (driver == null) {
-		        throw new IllegalArgumentException("WebDriver is null. Cannot take screenshot.");
-		    }
-		  String timestamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		  TakesScreenshot takesscreenshot = (TakesScreenshot)driver;
-		  File sourcefile = takesscreenshot.getScreenshotAs(OutputType.FILE);
-		   String targetfilepath=System.getProperty("user.dir")+"\\screenshots\\" +tname + "_" +timestamp + ".png";
-		  File targetfile = new File(targetfilepath);
-		  return targetfilepath;
-	  } */
+	
 	  public String capturescreen(WebDriver driver, String tname) throws IOException {
 
 		 
@@ -142,6 +132,6 @@ public class baseclass {
 		   String generatedstring = RandomStringUtils.randomAlphabetic(3);
 		   String generatednumber = RandomStringUtils.randomNumeric(3);
 		   return (generatedstring+ "@"+generatednumber);
-	   }
+	   } 
 
-}
+} 

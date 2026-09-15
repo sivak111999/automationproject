@@ -1,10 +1,12 @@
 package textexecution;
 
 import org.openqa.selenium.WebDriver;
+
 import org.testng.annotations.Test;
 
 import POMpage.registeerpage;
 import basepage.baseclass;
+
 
 public class registeerclass  extends baseclass{
 	
