@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-15T14:34:08 IST" name="Default suite" finished-at="2026-09-15T14:34:17 IST" duration-ms="9178">
+  <suite started-at="2026-09-16T15:03:15 IST" name="Default suite" finished-at="2026-09-16T15:03:28 IST" duration-ms="13514">
     <groups>
     </groups>
-    <test started-at="2026-09-15T14:34:08 IST" name="Default test" finished-at="2026-09-15T14:34:17 IST" duration-ms="9178">
-      <class name="seleniumconcepts.dynamictable">
-        <test-method signature="dynamictable()[pri:0, instance:seleniumconcepts.dynamictable@7c7a06ec]" started-at="2026-09-15T14:34:08 IST" name="dynamictable" finished-at="2026-09-15T14:34:17 IST" duration-ms="9096" status="PASS">
+    <test started-at="2026-09-16T15:03:15 IST" name="Default test" finished-at="2026-09-16T15:03:28 IST" duration-ms="13514">
+      <class name="textexecution.testcaepage">
+        <test-method is-config="true" signature="setupmethod()[pri:0, instance:textexecution.testcaepage@2d1ef81a]" started-at="2026-09-16T15:03:15 IST" name="setupmethod" finished-at="2026-09-16T15:03:23 IST" duration-ms="8620" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dynamictable -->
-      </class> <!-- seleniumconcepts.dynamictable -->
+        </test-method> <!-- setupmethod -->
+        <test-method signature="verifytestcaepage()[pri:0, instance:textexecution.testcaepage@2d1ef81a]" started-at="2026-09-16T15:03:23 IST" name="verifytestcaepage" finished-at="2026-09-16T15:03:28 IST" duration-ms="4389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytestcaepage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:textexecution.testcaepage@2d1ef81a]" started-at="2026-09-16T15:03:28 IST" name="tearDown" finished-at="2026-09-16T15:03:28 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- textexecution.testcaepage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

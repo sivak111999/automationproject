@@ -41,11 +41,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class baseclass {
 	public org.apache.logging.log4j.Logger logger;
 	protected   WebDriver driver;
-	@BeforeMethod(groups ={"regression"})
+	//@BeforeMethod(groups ={"regression"})
 	//@Parameters({"os","browser"})
 	public void setupmethod(/*String os, String browser*/ ) throws IOException {
 
-       // WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
 		
 		FileReader file = new FileReader("./src//test//resources//config.properties");
 	Properties	p = new Properties();
