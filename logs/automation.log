@@ -1,4 +1,2 @@
-21:20:34.610 [main] INFO  textexecution.login - test satrted
-21:20:40.490 [main] INFO  textexecution.login - get error message
-21:23:48.605 [main] INFO  textexecution.login - test satrted
-21:23:53.236 [main] INFO  textexecution.login - get error message
+16:51:16.185 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+16:51:16.206 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels

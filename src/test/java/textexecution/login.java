@@ -2,6 +2,7 @@ package textexecution;
 
 import static org.testng.Assert.assertEquals;
 
+
 import java.io.IOException;
 import java.util.Properties;
 
@@ -20,6 +21,8 @@ import basepage.baseclass;
 import org.testng.annotations.Listeners;
 
 import utilitties.TestListener;
+import utilitties.exeeldata;
+
 
 
 @Listeners(TestListener.class)
@@ -27,24 +30,31 @@ public class login extends baseclass {
 	
 	
 	
-	 
+	//String filePath = "src/test/resources/TestData.xlsx";
 
 		   @Test(priority=1, groups ={"regression"})
 		    public void validcrenditials() throws Exception {
-			   
+			 
+			
+			    
+
+			
 			   
                logger.info("test satrted");
 		        loginpage log = new loginpage(driver);
                logger.info("enter the credntials");
               log.login("sivareddy@gmail.com","Siva$123");
+             
               
-              capturescreen( driver,"validcrenditials.png");
+            //  capturescreen( driver,"validcrenditials.png");
            //   logger.info("testexecuted");
           
 		       
 		     
 		    }
 		   
+		
+
 		 //  String expectedmessage="Your email or password is incorrect!";
 		   @Test(priority=2, groups={"regression"})
 			   public void invalidcredentials() throws IOException {
@@ -128,27 +138,7 @@ public class login extends baseclass {
 	   Assert.assertEquals(actualmessage, expectedmessage);
 	   
 		   }
-		   
-		   public   String randomstring() {
-			   
-			    String generatedstring = RandomStringUtils.randomAlphabetic(5);
-			   return generatedstring;
-			   
-		   }
-		   
-		   public String randomnumber() {
-			    String generatednumber= RandomStringUtils.randomNumeric(10);
-				return generatednumber
-						;
-			   
-		   }
-		   
-		   public String randomalpanumaric() {
-			   String generatedstring = RandomStringUtils.randomAlphabetic(3);
-			   String generatednumber = RandomStringUtils.randomNumeric(3);
-			   return (generatedstring+ "@"+generatednumber);
-		   }
-	
+		
 
 	   
 }

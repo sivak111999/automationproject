@@ -14,6 +14,7 @@ import java.util.Properties;
 
 
 import org.apache.logging.log4j.core.Logger;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -40,11 +41,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class baseclass {
 	public org.apache.logging.log4j.Logger logger;
 	protected   WebDriver driver;
-	@BeforeMethod(groups ={"regression"})
+	//@BeforeMethod(groups ={"regression"})
 	//@Parameters({"os","browser"})
 	public void setupmethod(/*String os, String browser*/ ) throws IOException {
 
-       // WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
 		
 		FileReader file = new FileReader("./src//test//resources//config.properties");
 	Properties	p = new Properties();
@@ -72,26 +73,16 @@ public class baseclass {
 		
 		
 		
-	}
+	} 
 	
 	
 	  @AfterMethod
 	    public void tearDown() {
         if(driver!=null) {
 	        driver.quit();
-	    }
+	    }  
 	  }
-	/*  public String capturescreen(WebDriver driver ,String tname) {
-		  if (driver == null) {
-		        throw new IllegalArgumentException("WebDriver is null. Cannot take screenshot.");
-		    }
-		  String timestamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		  TakesScreenshot takesscreenshot = (TakesScreenshot)driver;
-		  File sourcefile = takesscreenshot.getScreenshotAs(OutputType.FILE);
-		   String targetfilepath=System.getProperty("user.dir")+"\\screenshots\\" +tname + "_" +timestamp + ".png";
-		  File targetfile = new File(targetfilepath);
-		  return targetfilepath;
-	  } */
+	
 	  public String capturescreen(WebDriver driver, String tname) throws IOException {
 
 		 
@@ -122,4 +113,25 @@ public class baseclass {
 		// TODO Auto-generated method stub
 		return null;
 	  }
-}
+	   
+	   public   String randomstring() {
+		   
+		    String generatedstring = RandomStringUtils.randomAlphabetic(5);
+		   return generatedstring;
+		   
+	   }
+	   
+	   public String randomnumber() {
+		    String generatednumber= RandomStringUtils.randomNumeric(10);
+			return generatednumber
+					;
+		   
+	   }
+	   
+	   public String randomalpanumaric() {
+		   String generatedstring = RandomStringUtils.randomAlphabetic(3);
+		   String generatednumber = RandomStringUtils.randomNumeric(3);
+		   return (generatedstring+ "@"+generatednumber);
+	   } 
+
+} 

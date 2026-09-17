@@ -1,112 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-18T21:19:35 IST" name="Default suite" finished-at="2026-08-18T21:19:36 IST" duration-ms="375">
+  <suite started-at="2026-09-16T15:03:15 IST" name="Default suite" finished-at="2026-09-16T15:03:28 IST" duration-ms="13514">
     <groups>
-      <group name="regression">
-        <method signature="login.repeatedlogin()[pri:6, instance:textexecution.login@10683d9d]" name="repeatedlogin" class="textexecution.login"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2026-08-18T21:19:35 IST" name="Default test" finished-at="2026-08-18T21:19:36 IST" duration-ms="375">
-      <class name="textexecution.login">
-        <test-method is-config="true" signature="setupmethod(java.lang.String,java.lang.String)[pri:0, instance:textexecution.login@10683d9d]" started-at="2026-08-18T21:19:35 IST" name="setupmethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1787068175995" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'os' is required by BeforeMethod on method setupmethod but has not been marked @Optional or defined
-in C:\Users\kotla\AppData\Local\Temp\testng-eclipse--1747454721\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'os' is required by BeforeMethod on method setupmethod but has not been marked @Optional or defined
-in C:\Users\kotla\AppData\Local\Temp\testng-eclipse--1747454721\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2026-09-16T15:03:15 IST" name="Default test" finished-at="2026-09-16T15:03:28 IST" duration-ms="13514">
+      <class name="textexecution.testcaepage">
+        <test-method is-config="true" signature="setupmethod()[pri:0, instance:textexecution.testcaepage@2d1ef81a]" started-at="2026-09-16T15:03:15 IST" name="setupmethod" finished-at="2026-09-16T15:03:23 IST" duration-ms="8620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupmethod -->
-        <test-method signature="repeatedlogin()[pri:6, instance:textexecution.login@10683d9d]" started-at="2026-08-18T21:19:36 IST" name="repeatedlogin" finished-at="2026-08-18T21:19:36 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'os' is required by BeforeMethod on method setupmethod but has not been marked @Optional or defined
-in C:\Users\kotla\AppData\Local\Temp\testng-eclipse--1747454721\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'os' is required by BeforeMethod on method setupmethod but has not been marked @Optional or defined
-in C:\Users\kotla\AppData\Local\Temp\testng-eclipse--1747454721\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="verifytestcaepage()[pri:0, instance:textexecution.testcaepage@2d1ef81a]" started-at="2026-09-16T15:03:23 IST" name="verifytestcaepage" finished-at="2026-09-16T15:03:28 IST" duration-ms="4389" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- repeatedlogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:textexecution.login@10683d9d]" started-at="2026-08-18T21:19:36 IST" name="tearDown" finished-at="2026-08-18T21:19:36 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- verifytestcaepage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:textexecution.testcaepage@2d1ef81a]" started-at="2026-09-16T15:03:28 IST" name="tearDown" finished-at="2026-09-16T15:03:28 IST" duration-ms="440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- textexecution.login -->
+      </class> <!-- textexecution.testcaepage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,8 +1,12 @@
 package seleniumconcepts;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+
+import com.github.dockerjava.api.model.Driver;
 
 import basepage.baseclass;
 
@@ -56,6 +60,12 @@ WebElement checkbox = driver.findElement(By.id("name"));
 checkbox.click();
 
 System.out.println(checkbox.isSelected()); 
+Alert alret = driver.switchTo().alert();
+alret.accept();
+JavascriptExecutor js = (JavascriptExecutor) driver;
+
+js.executeScript("arguments[0].scrollintoview();", checkbox);
+checkbox.click();
 	}
 
 }
