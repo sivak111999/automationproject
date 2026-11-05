@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="regression">
+<groups>
+<run>
+<include name="regression"/>
+</run>
+</groups>
+
+<test thread-count="1" name="regression">
+<parameter name="os" value="windows"/>
+<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="textexecution.login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

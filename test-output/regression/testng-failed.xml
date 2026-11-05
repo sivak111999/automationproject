@@ -12,10 +12,7 @@
     <classes>
       <class name="textexecution.login">
         <methods>
-          <include name="validemaiidandinvalidpassword"/>
-          <include name="invalidemaiidandvalidpassword"/>
           <include name="setupmethod"/>
-          <include name="invalidcredentials"/>
           <include name="ValidateloggingintotheApplicationwithoutprovidinganycredentials"/>
         </methods>
       </class> <!-- textexecution.login -->
