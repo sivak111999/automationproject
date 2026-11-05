@@ -1,4 +1,4 @@
-package basepage;
+package utilitties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -6,27 +6,28 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
-	 
 	 private static ThreadLocal<WebDriver> driver =
 	            new ThreadLocal<>();
 
-	    public static void initDriver(String browser) {
+	    public static void setDriver(String browser) {
+
+	        WebDriver webDriver;
 
 	        if (browser.equalsIgnoreCase("chrome")) {
-	            driver.set(new ChromeDriver());
+	            webDriver = new ChromeDriver();
 
 	        } else if (browser.equalsIgnoreCase("firefox")) {
-	            driver.set(new FirefoxDriver());
+	            webDriver = new FirefoxDriver();
 
 	        } else if (browser.equalsIgnoreCase("edge")) {
-	            driver.set(new EdgeDriver());
+	            webDriver = new EdgeDriver();
 
 	        } else {
 	            throw new IllegalArgumentException(
-	                    "Invalid browser: " + browser);
+	                    "Browser not supported: " + browser);
 	        }
 
-	        getDriver().manage().window().maximize();
+	        driver.set(webDriver);
 	    }
 
 	    public static WebDriver getDriver() {
@@ -35,10 +36,9 @@ public class DriverFactory {
 
 	    public static void quitDriver() {
 
-	        if (getDriver() != null) {
-	            getDriver().quit();
+	        if (driver.get() != null) {
+	            driver.get().quit();
 	            driver.remove();
 	        }
 	    }
-
 }

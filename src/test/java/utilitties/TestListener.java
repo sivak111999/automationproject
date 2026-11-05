@@ -92,17 +92,7 @@ String repname;
       
     }
    
-   /* @Override
-    public void onTestFailure(ITestResult result) {
-    	test = extent.createTest(result.getTestClass().getName());
-    	test.assignCategory(result.getMethod().getGroups());
-    	test.log(Status.FAIL,result.getName() +"got failed");
-    	test.log(Status.INFO, result.getThrowable().getMessage());
-    //	WebDriver driver = null;
-		String imgpath = new baseclass().capturescreen(driver,result.getName());
-		test.addScreenCaptureFromPath(imgpath);
-
-    }*/
+  
     
     public void onTestFailure(ITestResult result) {
 

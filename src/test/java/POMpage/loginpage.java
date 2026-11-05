@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 import org.testng.Assert;
 
 import basepage.baseclass;
+import utilitties.DriverFactory;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -34,7 +35,8 @@ public class loginpage  {
 
 	   
 	    public loginpage(WebDriver driver) {
-	        this.driver = driver;
+	       this.driver = driver;
+	    	  // this.driver = DriverFactory.getDriver();
 	        PageFactory.initElements(driver, this);
 	    }
 	    

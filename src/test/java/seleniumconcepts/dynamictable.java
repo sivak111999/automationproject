@@ -23,7 +23,7 @@ public class dynamictable {
 	List<WebElement> rows = driver.findElements(By.xpath("//*[@id=\"taskTable\"]"));
 	for(WebElement row:rows) {
 		
-		//System.out.println(row.getText());
+		System.out.println(row.getText());
 		 String name = row.findElement(
 		            By.xpath("//*[@id=\"rows\"]/tr[3]/td[1]")).getText();
 		 

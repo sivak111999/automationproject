@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utilitties.DriverFactory;
+
 public class registeerpage {
 	
 	 WebDriver driver;
@@ -86,6 +88,7 @@ public class registeerpage {
 	
 	 public registeerpage(WebDriver driver) {
 	        this.driver = driver;
+		//   this.driver = DriverFactory.getDriver();
 	        PageFactory.initElements(driver, this);
 	    }
 	 

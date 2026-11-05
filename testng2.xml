@@ -11,7 +11,8 @@
 <!--<parameter name="os" value="windows"/>
 <parameter name="browser" value="chrome"/> -->
     <classes>
-      <class name="textexecution.registeerclass"/>
+      <class name="textexecution.login"/>
+    <!-- <class name="textexecution.registeerclass"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
